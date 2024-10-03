@@ -4,28 +4,28 @@ This syllabus provides a comprehensive guide to advanced concepts in TypeScript 
 
 ## TypeScript and Node.js Deep Dive
 
-### Concepts
+### Types Manipulation
 
-- [ ] **Conditional Types and Mapped Types**: Understanding and implementing advanced type transformations.
+- [ ] **Partial and Required Utility Types**: Modifying object type properties for flexibility.
+- [ ] **Typeof Type Operator and ReturnType Utility**: Inferring types from values and functions.
+- [ ] **Const Assertions and Readonly Type Modifiers**: Ensuring immutability at the type level.
 - [ ] **Template Literal Types**: Leveraging string manipulation at the type level.
 - [ ] **Variadic Tuple Types**: Working with tuples of variable length in type definitions.
-- [ ] **Recursive Type Aliases**: Creating complex types through self-referential definitions.
-- [ ] **Higher-Kinded Types and Type-Level Programming**: Exploring advanced type system capabilities.
-- [ ] **Advanced Type Inference and Type Narrowing Techniques**: Improving type precision in complex scenarios.
 - [ ] **Branded and Nominal Types**: Enhancing type safety through unique type identifiers.
-- [ ] **Polymorphic This Types and Fluent Interfaces**: Building chainable APIs with correct typing.
 - [ ] **Intersection and Union Types with Discriminated Unions**: Combining types for flexible and safe data modeling.
-- [ ] **Const Assertions and Readonly Type Modifiers**: Ensuring immutability at the type level.
-- [ ] **Advanced Use of Infer Keyword in Conditional Types**: Extracting types from complex structures.
-- [ ] **Type-Safe Event Emitters Using Conditional Types**: Creating strongly-typed event systems.
 - [ ] **Index Types and Keyof Operator**: Working with object properties in a type-safe manner.
-- [ ] **Mapped Types with As Clauses**: Transforming object types with advanced key remapping.
 - [ ] **Literal Types and Type Widening/Narrowing**: Controlling type inference for more precise types.
 - [ ] **Never Type and Exhaustiveness Checking**: Ensuring all cases are handled in conditional logic.
-- [ ] **Typeof Type Operator and ReturnType Utility**: Inferring types from values and functions.
-- [ ] **Partial and Required Utility Types**: Modifying object type properties for flexibility.
 - [ ] **ThisType Utility**: Typing methods in objects with correct 'this' context.
 - [ ] **Namespace Merging and Declaration Merging**: Combining declarations for modularity and extensibility.
+- [ ] **Conditional Types and Mapped Types**: Understanding and implementing advanced type transformations.
+- [ ] **Recursive Type Aliases**: Creating complex types through self-referential definitions.
+- [ ] **Advanced Type Inference and Type Narrowing Techniques**: Improving type precision in complex scenarios.
+- [ ] **Polymorphic This Types and Fluent Interfaces**: Building chainable APIs with correct typing.
+- [ ] **Advanced Use of Infer Keyword in Conditional Types**: Extracting types from complex structures.
+- [ ] **Type-Safe Event Emitters Using Conditional Types**: Creating strongly-typed event systems.
+- [ ] **Mapped Types with As Clauses**: Transforming object types with advanced key remapping.
+- [ ] **Higher-Kinded Types and Type-Level Programming**: Exploring advanced type system capabilities.
 
 ### Creational Patterns
 
@@ -60,7 +60,7 @@ This syllabus provides a comprehensive guide to advanced concepts in TypeScript 
 
 ## Node.js Concepts and Techniques
 
-- [ ] **Custom Streams**: Implementing custom duplex and transform streams in TypeScript for efficient data processing and manipulation.
+- [ ] **Streams**: Implementing custom duplex and transform streams in TypeScript for efficient data processing and manipulation.
 - [ ] **Native Addons**: Creating native addons with N-API in TypeScript, focusing on performance optimizations and effective memory management.
 - [ ] **Error Handling**: Implementing advanced error handling techniques, including custom error classes, error chaining, and global error handlers for robust application stability.
 - [ ] **Debugging and Profiling**: Mastering debugging techniques using Chrome DevTools, memory leak detection, and profiling for performance optimization.
@@ -69,28 +69,6 @@ This syllabus provides a comprehensive guide to advanced concepts in TypeScript 
 - [ ] **Concurrent Processing**: Leveraging Worker Threads for CPU-intensive tasks in TypeScript to improve application performance and responsiveness.
 - [ ] **Microservices Architecture**: Building scalable microservices with TypeScript and gRPC, focusing on efficient communication protocols and service design.
 - [ ] **Reactive Programming with RxJS**: Implementing reactive programming patterns using RxJS in Node.js applications, focusing on Observables, Operators, and Subjects for handling asynchronous data streams and event-based programming.
-
-## Advanced Algorithms and Data Structures
-
-### Data Structures
-
-- [ ] **Red-Black Trees**: Self-balancing binary search trees with efficient insertion and deletion.
-- [ ] **B-Trees**: Balanced search trees optimized for disk-based storage systems.
-- [ ] **Fibonacci Heaps**: Priority queues with amortized fast operations for graph algorithms.
-- [ ] **Disjoint Set Union (DSU)**: Efficient data structure for managing disjoint sets and connectivity.
-- [ ] **Trie (Prefix Tree)**: Tree-like structure for efficient string searching and prefix matching.
-- [ ] **Segment Tree**: Binary tree for range queries and updates on arrays.
-- [ ] **Fenwick Tree (Binary Indexed Tree)**: Efficient data structure for prefix sums and range queries.
-- [ ] **Skip List**: Probabilistic data structure for fast search and insertion in ordered sequences.
-- [ ] **Bloom Filter**: Space-efficient probabilistic data structure for set membership queries.
-- [ ] **Van Emde Boas Tree**: Fast integer searching and predecessor data structure.
-
-### Dynamic Programming and Algorithm Techniques
-
-- [ ] **Advanced Dynamic Programming**: Solving complex dynamic programming problems, including multi-dimensional DP, bitmasking techniques, and optimization problems.
-- [ ] **Approximation Algorithms**: Implementing approximation algorithms for NP-hard problems, such as the Traveling Salesman Problem, Set Cover, and Knapsack Problem.
-- [ ] **Randomized Algorithms**: Developing and analyzing randomized algorithms, including Monte Carlo and Las Vegas algorithms, for problems like quicksort and primality testing.
-- [ ] **Online Algorithms**: Exploring online algorithms and competitive analysis, focusing on problems like the k-server problem, paging, and online scheduling.
 
 ## Testing Techniques
 
@@ -146,3 +124,43 @@ This syllabus provides a comprehensive guide to advanced concepts in TypeScript 
 - [ ] **Event Sourcing**: Develop an event-sourced system and explore its advantages and challenges.
 - [ ] **Interpreter Pattern for Domain-Specific Languages**: Create a simple DSL using the interpreter pattern.
 - [ ] **Specification Pattern for Complex Business Rules**: Implement and utilize the specification pattern for flexible rule composition.
+
+## Data Structures and Algorithms
+
+### Data Structures
+
+Before diving into these advanced data structures, it's recommended to have a solid understanding of:
+
+- [ ] Basic data structures (arrays, linked lists, stacks, queues, hash tables)
+- [ ] Binary trees and binary search trees
+- [ ] Time and space complexity analysis
+- [ ] Basic graph theory concepts
+
+---
+
+- [ ] **Red-Black Trees**: Self-balancing binary search trees with efficient insertion and deletion.
+- [ ] **B-Trees**: Balanced search trees optimized for disk-based storage systems.
+- [ ] **Fibonacci Heaps**: Priority queues with amortized fast operations for graph algorithms.
+- [ ] **Disjoint Set Union (DSU)**: Efficient data structure for managing disjoint sets and connectivity.
+- [ ] **Trie (Prefix Tree)**: Tree-like structure for efficient string searching and prefix matching.
+- [ ] **Segment Tree**: Binary tree for range queries and updates on arrays.
+- [ ] **Fenwick Tree (Binary Indexed Tree)**: Efficient data structure for prefix sums and range queries.
+- [ ] **Skip List**: Probabilistic data structure for fast search and insertion in ordered sequences.
+- [ ] **Bloom Filter**: Space-efficient probabilistic data structure for set membership queries.
+- [ ] **Van Emde Boas Tree**: Fast integer searching and predecessor data structure.
+
+### Dynamic Programming and Algorithm Techniques
+
+Before diving into these advanced algorithm techniques, it's recommended to have a solid understanding of:
+
+- [ ] Basic dynamic programming concepts
+- [ ] Complexity analysis (Big O notation)
+- [ ] Probability theory basics
+- [ ] Graph theory fundamentals
+
+---
+
+- [ ] **Advanced Dynamic Programming**: Solving complex dynamic programming problems, including multi-dimensional DP, bitmasking techniques, and optimization problems.
+- [ ] **Approximation Algorithms**: Implementing approximation algorithms for NP-hard problems, such as the Traveling Salesman Problem, Set Cover, and Knapsack Problem.
+- [ ] **Randomized Algorithms**: Developing and analyzing randomized algorithms, including Monte Carlo and Las Vegas algorithms, for problems like quicksort and primality testing.
+- [ ] **Online Algorithms**: Exploring online algorithms and competitive analysis, focusing on problems like the k-server problem, paging, and online scheduling.
