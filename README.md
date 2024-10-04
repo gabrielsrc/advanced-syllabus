@@ -27,7 +27,9 @@ This syllabus provides a comprehensive guide to advanced concepts in TypeScript 
 - [ ] **Mapped Types with As Clauses**: Transforming object types with advanced key remapping.
 - [ ] **Higher-Kinded Types and Type-Level Programming**: Exploring advanced type system capabilities.
 
-### Creational Patterns
+### Design Patterns
+
+#### Creational Patterns
 
 - [ ] **Singleton**: Implementing thread-safe singleton pattern in TypeScript.
 - [ ] **Factory Method**: Creating objects without specifying their exact class.
@@ -35,7 +37,7 @@ This syllabus provides a comprehensive guide to advanced concepts in TypeScript 
 - [ ] **Builder**: Constructing complex objects step by step.
 - [ ] **Prototype**: Cloning objects efficiently.
 
-### Structural Patterns
+#### Structural Patterns
 
 - [ ] **Adapter**: Allowing incompatible interfaces to work together.
 - [ ] **Bridge**: Separating abstraction from implementation.
@@ -45,7 +47,7 @@ This syllabus provides a comprehensive guide to advanced concepts in TypeScript 
 - [ ] **Flyweight**: Sharing common parts of state between multiple objects.
 - [ ] **Proxy**: Controlling access to an object.
 
-### Behavioral Patterns
+#### Behavioral Patterns
 
 - [ ] **Chain of Responsibility**: Passing requests along a chain of handlers.
 - [ ] **Command**: Encapsulating a request as an object.
@@ -60,15 +62,86 @@ This syllabus provides a comprehensive guide to advanced concepts in TypeScript 
 
 ## Node.js Concepts and Techniques
 
-- [ ] **Streams**: Implementing custom duplex and transform streams in TypeScript for efficient data processing and manipulation.
-- [ ] **Native Addons**: Creating native addons with N-API in TypeScript, focusing on performance optimizations and effective memory management.
-- [ ] **Error Handling**: Implementing advanced error handling techniques, including custom error classes, error chaining, and global error handlers for robust application stability.
-- [ ] **Debugging and Profiling**: Mastering debugging techniques using Chrome DevTools, memory leak detection, and profiling for performance optimization.
-- [ ] **TypeScript Compilation Optimization**: Optimizing TypeScript compilation for Node.js, including tsconfig options, module resolution strategies, and tree shaking for improved runtime performance.
-- [ ] **Asynchronous Programming**: Implementing and utilizing asynchronous iterators and generators in TypeScript for efficient handling of asynchronous data streams.
-- [ ] **Concurrent Processing**: Leveraging Worker Threads for CPU-intensive tasks in TypeScript to improve application performance and responsiveness.
-- [ ] **Microservices Architecture**: Building scalable microservices with TypeScript and gRPC, focusing on efficient communication protocols and service design.
-- [ ] **Reactive Programming with RxJS**: Implementing reactive programming patterns using RxJS in Node.js applications, focusing on Observables, Operators, and Subjects for handling asynchronous data streams and event-based programming.
+- **Streams**: Implementing custom streams in TypeScript for efficient data processing and manipulation.
+
+  - [ ] Readable Streams: Create a custom readable stream for generating large datasets.
+  - [ ] Writable Streams: Implement a writable stream for efficient data storage or transmission.
+  - [ ] Duplex Streams: Develop a duplex stream for bidirectional communication.
+  - [ ] Transform Streams: Build a transform stream for real-time data modification.
+  - [ ] Piping Streams: Chain multiple streams together for complex data processing pipelines.
+  - [ ] Backpressure Handling: Implement backpressure mechanisms to prevent memory overflow.
+  - [ ] Error Handling in Streams: Properly manage and propagate errors in stream operations.
+  - [ ] Stream Performance Optimization: Profile and optimize stream performance for large-scale data processing.
+
+- **Error Handling**: Implementing advanced error handling techniques, including custom error classes, error chaining, and global error handlers for robust application stability.
+
+  - [ ] Create custom error classes with TypeScript
+  - [ ] Implement error chaining for better error tracing
+  - [ ] Design and implement a global error handling system
+  - [ ] Use async/await with proper error handling
+  - [ ] Implement domain-specific error types
+  - [ ] Create error serialization and deserialization methods
+  - [ ] Integrate logging with error handling
+
+- **Debugging and Profiling**: Mastering debugging techniques using Chrome DevTools, memory leak detection, and profiling for performance optimization.
+
+  - [ ] Set up source maps for TypeScript debugging
+  - [ ] Use Chrome DevTools for Node.js debugging
+  - [ ] Implement memory leak detection techniques
+  - [ ] Use Node.js built-in profiling tools
+  - [ ] Analyze heap snapshots for memory issues
+  - [ ] Implement CPU profiling for performance bottlenecks
+  - [ ] Use flame graphs for visualizing performance issues
+
+- **TypeScript Compilation Optimization**: Optimizing TypeScript compilation for Node.js, including tsconfig options, module resolution strategies, and tree shaking for improved runtime performance.
+
+  - [ ] Configure tsconfig.json for optimal compilation
+  - [ ] Implement module resolution strategies
+  - [ ] Use tree shaking techniques for dead code elimination
+  - [ ] Optimize TypeScript's type checking process
+  - [ ] Implement incremental compilation
+  - [ ] Use project references for large-scale applications
+  - [ ] Analyze and optimize bundle size
+
+- **Asynchronous Programming**: Implementing and utilizing asynchronous iterators and generators in TypeScript for efficient handling of asynchronous data streams.
+
+  - [ ] Implement custom asynchronous iterators
+  - [ ] Create asynchronous generators
+  - [ ] Use for-await-of loops with async iterables
+  - [ ] Implement cancellation in async operations
+  - [ ] Create composable async operations
+  - [ ] Implement error handling in async iterators
+  - [ ] Optimize memory usage in async data streams
+
+- **Concurrent Processing**: Leveraging Worker Threads for CPU-intensive tasks in TypeScript to improve application performance and responsiveness.
+
+  - [ ] Set up Worker Threads in a TypeScript project
+  - [ ] Implement data sharing between threads
+  - [ ] Use thread pools for managing multiple workers
+  - [ ] Implement error handling in multi-threaded scenarios
+  - [ ] Optimize inter-thread communication
+  - [ ] Implement thread synchronization techniques
+  - [ ] Profile and optimize multi-threaded performance
+
+- **Microservices Architecture**: Building scalable microservices with TypeScript and gRPC, focusing on efficient communication protocols and service design.
+
+  - [ ] Set up a gRPC server and client in TypeScript
+  - [ ] Design and implement service contracts using Protocol Buffers
+  - [ ] Implement service discovery mechanisms
+  - [ ] Design fault-tolerant microservices
+  - [ ] Implement inter-service communication patterns
+  - [ ] Implement authentication and authorization in microservices
+  - [ ] Set up monitoring and logging for microservices
+
+- **Reactive Programming with RxJS**: Implementing reactive programming patterns using RxJS in Node.js applications, focusing on Observables, Operators, and Subjects for handling asynchronous data streams and event-based programming.
+
+  - [ ] Create and subscribe to Observables
+  - [ ] Implement common RxJS operators
+  - [ ] Use Subjects for multicast events
+  - [ ] Implement error handling in RxJS streams
+  - [ ] Create custom operators for specific use cases
+  - [ ] Implement backpressure handling techniques
+  - [ ] Optimize memory usage in long-running observables
 
 ## Testing Techniques
 
@@ -83,7 +156,6 @@ This syllabus provides a comprehensive guide to advanced concepts in TypeScript 
 
 ### E2E Testing
 
-- [ ] **Visual Regression Testing**: Visual regression testing using Jest with libraries like jest-image-snapshot.
 - [ ] **API Contract Testing**: API contract testing using Jest with supertest and nock.
 - [ ] **Performance Testing**: Performance testing in E2E scenarios using Jest with puppeteer and lighthouse.
 - [ ] **Cross-Browser Testing**: Cross-browser testing with Jest and Selenium WebDriver.
@@ -106,24 +178,135 @@ This syllabus provides a comprehensive guide to advanced concepts in TypeScript 
 
 ### Advanced OOP and SOLID Principles in TypeScript
 
-- [ ] **Implementing the Dependency Inversion Principle**: Use abstract classes and interfaces to decouple high-level modules from low-level modules, promoting flexibility and easier testing.
-- [ ] **Using mixins and composition**: Leverage TypeScript's mixin pattern and favor composition over inheritance to create more flexible and maintainable code structures.
-- [ ] **Implementing type-safe event emitters**: Create custom event emitters with strong typing to ensure type safety when working with events and callbacks.
-- [ ] **Advanced use of generics in OOP design**: Utilize complex generic types to create highly reusable and type-safe class hierarchies and interfaces.
-- [ ] **Implementing the Liskov Substitution Principle**: Ensure that derived classes can be substituted for their base classes without affecting the correctness of the program.
-- [ ] **Applying the Interface Segregation Principle**: Design and implement fine-grained interfaces tailored to specific client needs.
-- [ ] **Implementing the Open/Closed Principle**: Create extensible systems that are open for extension but closed for modification using abstract classes and interfaces.
-- [ ] **Advanced TypeScript decorators**: Implement and use custom property, method, and class decorators to add metadata and modify behavior.
-- [ ] **Immutable data structures**: Design and implement immutable classes and data structures to improve code predictability and reduce side effects.
+- **Implementing the Dependency Inversion Principle**: Use abstract classes and interfaces to decouple high-level
+  modules from low-level modules, promoting flexibility and easier testing.
+
+  - [ ] Identify high-level and low-level modules in a project
+  - [ ] Create abstract classes or interfaces for low-level modules
+  - [ ] Implement dependency injection to invert control
+  - [ ] Refactor existing code to adhere to the principle
+  - [ ] Write unit tests to verify decoupling
+
+- **Using mixins and composition**: Leverage TypeScript's mixin pattern and favor composition over inheritance to
+  create more flexible and maintainable code structures.
+
+  - [ ] Implement a mixin class in TypeScript
+  - [ ] Apply mixins to a class using TypeScript's mixin pattern
+  - [ ] Create a composition-based design for a specific problem
+  - [ ] Compare and contrast mixin vs inheritance approaches
+  - [ ] Refactor an inheritance-based system to use composition
+
+- **Implementing type-safe event emitters**: Create custom event emitters with strong typing to ensure type safety
+  when working with events and callbacks.
+
+  - [ ] Design a generic EventEmitter class
+  - [ ] Implement strongly-typed event registration and emission
+  - [ ] Create custom event types with payload interfaces
+  - [ ] Add error handling for type mismatches
+  - [ ] Write unit tests for type safety scenarios
+
+- **Advanced use of generics in OOP design**: Utilize complex generic types to create highly reusable and type-safe
+  class hierarchies and interfaces.
+
+  - [ ] Implement generic constraints for class hierarchies
+  - [ ] Use conditional types with generics
+  - [ ] Create generic factory functions
+  - [ ] Design a generic Repository pattern
+  - [ ] Implement generic decorators
+
+- **Implementing the Liskov Substitution Principle**: Ensure that derived classes can be substituted for their base
+  classes without affecting the correctness of the program.
+
+  - [ ] Identify violations of LSP in existing code
+  - [ ] Refactor a class hierarchy to adhere to LSP
+  - [ ] Write unit tests to verify LSP compliance
+  - [ ] Implement contracts or runtime checks for LSP
+  - [ ] Design interfaces that promote LSP adherence
+
+- **Applying the Interface Segregation Principle**: Design and implement fine-grained interfaces tailored to
+  specific client needs.
+
+  - [ ] Analyze existing interfaces for potential violations
+  - [ ] Split large interfaces into smaller, more focused ones
+  - [ ] Implement role interfaces for specific behaviors
+  - [ ] Refactor client code to use segregated interfaces
+  - [ ] Write tests to ensure proper interface usage
+
+- **Implementing the Open/Closed Principle**: Create extensible systems that are open for extension but closed for
+  modification using abstract classes and interfaces.
+
+  - [ ] Identify areas in code that frequently change
+  - [ ] Design abstract base classes or interfaces for extensibility
+  - [ ] Implement the Strategy pattern to allow behavior extension
+  - [ ] Use the Template Method pattern for extensible algorithms
+  - [ ] Write tests to verify that extensions don't modify existing code
+
+- **Advanced TypeScript decorators**: Implement and use custom property, method, and class decorators to add
+  metadata and modify behavior.
+
+  - [ ] Implement a method decorator for logging
+  - [ ] Create a property decorator for validation
+  - [ ] Design a class decorator for dependency injection
+  - [ ] Implement a parameter decorator for type checking
+  - [ ] Combine multiple decorators to create complex behaviors
+
+- **Immutable data structures**: Design and implement immutable classes and data structures to improve code
+  predictability and reduce side effects.
+  - [ ] Implement an immutable class using readonly properties
+  - [ ] Create a deep immutable object using recursive readonly types
+  - [ ] Design an immutable list or tree data structure
+  - [ ] Implement efficient update operations for immutable structures
+  - [ ] Write tests to verify immutability and prevent mutations
 
 ### Architectural Patterns
 
-- [ ] **Hexagonal Architecture (Ports and Adapters)**: Implement and analyze the benefits of a hexagonal architecture.
-- [ ] **Clean Architecture**: Apply clean architecture principles to separate concerns and improve maintainability.
-- [ ] **CQRS (Command Query Responsibility Segregation)**: Design and implement a system using CQRS pattern.
-- [ ] **Event Sourcing**: Develop an event-sourced system and explore its advantages and challenges.
-- [ ] **Interpreter Pattern for Domain-Specific Languages**: Create a simple DSL using the interpreter pattern.
-- [ ] **Specification Pattern for Complex Business Rules**: Implement and utilize the specification pattern for flexible rule composition.
+- **Hexagonal Architecture (Ports and Adapters)**: Implement and analyze the benefits of a hexagonal architecture.
+
+  - [ ] Design the core domain logic
+  - [ ] Implement ports (interfaces) for input and output
+  - [ ] Create adapters for different technologies (e.g., REST API, database)
+  - [ ] Write tests for the core domain logic
+  - [ ] Analyze the benefits of loose coupling and testability
+
+- **Clean Architecture**: Apply clean architecture principles to separate concerns and improve maintainability.
+
+  - [ ] Define entities and use cases
+  - [ ] Implement the interface adapters layer
+  - [ ] Create the frameworks and drivers layer
+  - [ ] Ensure dependency rule is followed
+  - [ ] Refactor an existing project to follow clean architecture
+
+- **CQRS (Command Query Responsibility Segregation)**: Design and implement a system using CQRS pattern.
+
+  - [ ] Separate read and write models
+  - [ ] Implement command handlers
+  - [ ] Create query handlers
+  - [ ] Set up event bus for synchronization
+  - [ ] Optimize read and write operations independently
+
+- **Event Sourcing**: Develop an event-sourced system and explore its advantages and challenges.
+
+  - [ ] Design event schema
+  - [ ] Implement event store
+  - [ ] Create projections for different views
+  - [ ] Handle event versioning and migration
+  - [ ] Implement snapshotting for performance optimization
+
+- **Interpreter Pattern for Domain-Specific Languages**: Create a simple DSL using the interpreter pattern.
+
+  - [ ] Define the grammar for the DSL
+  - [ ] Implement abstract syntax tree (AST) classes
+  - [ ] Create a parser to build the AST
+  - [ ] Implement the interpret method for each AST node
+  - [ ] Build a simple interpreter for the DSL
+
+- **Specification Pattern for Complex Business Rules**: Implement and utilize the specification pattern for flexible rule composition.
+
+  - [ ] Create a base specification interface
+  - [ ] Implement atomic specifications
+  - [ ] Develop composite specifications (AND, OR, NOT)
+  - [ ] Apply specifications to domain objects
+  - [ ] Create a specification builder for easy rule composition
 
 ## Data Structures and Algorithms
 
@@ -131,10 +314,10 @@ This syllabus provides a comprehensive guide to advanced concepts in TypeScript 
 
 Before diving into these advanced data structures, it's recommended to have a solid understanding of:
 
-- [ ] Basic data structures (arrays, linked lists, stacks, queues, hash tables)
-- [ ] Binary trees and binary search trees
-- [ ] Time and space complexity analysis
-- [ ] Basic graph theory concepts
+- Basic data structures (arrays, linked lists, stacks, queues, hash tables)
+- Binary trees and binary search trees
+- Time and space complexity analysis
+- Basic graph theory concepts
 
 ---
 
@@ -153,10 +336,10 @@ Before diving into these advanced data structures, it's recommended to have a so
 
 Before diving into these advanced algorithm techniques, it's recommended to have a solid understanding of:
 
-- [ ] Basic dynamic programming concepts
-- [ ] Complexity analysis (Big O notation)
-- [ ] Probability theory basics
-- [ ] Graph theory fundamentals
+- Basic dynamic programming concepts
+- Complexity analysis (Big O notation)
+- Probability theory basics
+- Graph theory fundamentals
 
 ---
 
