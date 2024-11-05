@@ -1,6 +1,6 @@
 # Advanced Syllabus 🚀
 
-This syllabus provides a comprehensive guide to advanced concepts in TypeScript and Node.js, covering essential design patterns, algorithms, data structures, testing techniques, and architectural principles. It is designed for developers looking to deepen their understanding and enhance their skills in building robust, scalable applications.
+This syllabus provides a comprehensive topics list to advanced concepts in TypeScript and Node.js, covering essential design patterns, algorithms, data structures, testing techniques, and architectural principles. It is designed for developers looking to deepen their understanding and enhance their skills in building robust, scalable applications.
 
 ## TypeScript and Node.js Deep Dive 🔍
 
